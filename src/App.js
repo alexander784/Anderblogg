@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import BlogList from './Bloglist';
 import BlogDetail from './BlogDetails';
 import AddBlog from './AddBlog';
+import './App.css';
 
   function App() {
     const [blogs, setBlogs] = useState([]);

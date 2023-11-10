@@ -19,7 +19,7 @@ onAdd({ title, content });
 // Clear form inputs
 setTitle('');
 setContent('');
-};
+
 
 return (
     <div>
@@ -39,6 +39,7 @@ return (
       </form>
     </div>
   );
+};
 
 
 

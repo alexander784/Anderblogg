@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Bloglist = ({ blogs, onDelete }) => {
     return (
-      <div>
+      <div className='blog-list-container'>
         <h2>Blog List</h2>
         <ul>
           {blogs.map(blog => (
