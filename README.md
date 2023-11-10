@@ -15,9 +15,9 @@ This a React Blog app where a user can view list of Blogs,and new blogs and dele
 
 
 ## Installation
-1. Clone this Repo from Github: Git clone..
-2. Run npm install in your terminal to install all Dependecies.
-3. Run npm start to run your code in the server
+1. Clone this Repo from Github: Git clone..<br>
+2. Run npm install in your terminal to install all Dependecies.<br>
+3. Run npm start to run your code in the server<br>
 
 ## Usage
 After setting up the Project, You add new blog the homepage,or delete a blog using the respective buttons.
