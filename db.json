@@ -2,18 +2,19 @@
   "blogs": [
     {
       "id": 1,
-      "title": "React Basics",
-      "content": "An introduction to the basics of React."
+      "title": "Catch you next Week",
+      "content": "How lovely it is that this Tuesday has fallen on a Public Holiday",
+      "imageUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.inc.com%2Fuploaded_files%2Fimage%2F1920x1080%2Fgetty_655998316_2000149920009280219_363765.jpg&tbnid=BlUCjGvmpXjLRM&vet=12ahUKEwiQ3tzTpbmCAxU0vicCHa01HEMQMygAegQIARBu..i&imgrefurl=https%3A%2F%2Fwww.inc.com%2Fchristina-desmarais%2F21-books-to-read-if-you-want-to-get-ahead-in-business-life.html&docid=WpfJGyIp7epdTM&w=1920&h=1080&q=books&ved=2ahUKEwiQ3tzTpbmCAxU0vicCHa01HEMQMygAegQIARBu"
     },
     {
       "id": 2,
-      "title": "React Router",
-      "content": "Exploring React Router for navigation in React apps."
+      "title": "Captain Ann Mokua",
+      "content": "He’s somewhere, in some country where dance moves are all about showing off your knee strength and where they couldn’t pick a single city"
     },
     {
       "id": 3,
-      "title": "State and Props",
-      "content": "Understanding React state and props in component development."
+      "title": "Things Happened",
+      "content": "Strange seeing a baby. Pink on the cheeks, like a bruised red apple. Eyes closed as if meditating. ."
     },
     {
       "title": "gfyrd",
@@ -34,6 +35,31 @@
       "title": "gfteudnmdkif",
       "content": "gteysajsm",
       "id": 7
+    },
+    {
+      "title": "chfjfmfjf",
+      "content": "gyryfj",
+      "id": 8
+    },
+    {
+      "title": "fdtjkf",
+      "content": "fdtdjvc",
+      "id": 9
+    },
+    {
+      "title": "gddudjc",
+      "content": "fdteyf",
+      "id": 10
+    },
+    {
+      "title": "gfy cmcxmcx",
+      "content": "gdytrjv c",
+      "id": 11
+    },
+    {
+      "title": "VDGRUFKM",
+      "content": "HFJRK",
+      "id": 12
     }
   ]
 }

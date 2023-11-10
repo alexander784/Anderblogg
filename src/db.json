@@ -1,10 +1,39 @@
 {
-    "blogs": [
-
-    
-    ]
+  "blogs": [
+    {
+      "id": 1,
+      "title": "React Basics",
+      "content": "An introduction to the basics of React."
+    },
+    {
+      "id": 2,
+      "title": "React Router",
+      "content": "Exploring React Router for navigation in React apps."
+    },
+    {
+      "id": 3,
+      "title": "State and Props",
+      "content": "Understanding React state and props in component development."
+    },
+    {
+      "title": "gfyrd",
+      "content": "gfyjs",
+      "id": 4
+    },
+    {
+      "title": "hgfyrjdkd",
+      "content": "fyrycmc",
+      "id": 5
+    },
+    {
+      "title": "hfycmds",
+      "content": "gfteyusms",
+      "id": 6
+    },
+    {
+      "title": "gfteudnmdkif",
+      "content": "gteysajsm",
+      "id": 7
+    }
+  ]
 }
-
- 
-
-

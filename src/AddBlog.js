@@ -1,4 +1,3 @@
-// src/components/AddBlog.js
 import React, { useState } from 'react';
 
 const AddBlog = ({ onAdd }) => {
@@ -14,7 +13,6 @@ const AddBlog = ({ onAdd }) => {
       return;
     }
 
-    // Call the onAdd function with the new blog data
     onAdd({ title, content });
 
     // Clear form inputs
