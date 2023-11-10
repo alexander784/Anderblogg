@@ -32,6 +32,30 @@ import AddBlog from './AddBlog';
         .then(response => response.json())
         .then(data => setBlogs([...blogs, data]));
     };
+
+
+    return (
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/add">Add Blog</Link>
+              </li>
+            </ul>
+          </nav>
+  
+          <Routes>
+            <Route path="/" element={<BlogList blogs={blogs} onDelete={handleDelete} />} />
+            <Route path="/blog/:id" element={<BlogDetail blogs={blogs} />} />
+            <Route path="/add" element={<AddBlog onAdd={handleAdd} />} />
+          </Routes>
+        </div>
+      </Router>
+    );
 }
 
 
