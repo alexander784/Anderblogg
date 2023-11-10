@@ -70,7 +70,7 @@ a {
 }
 
 a:hover {
-  color: #ffd700; /* Change color on hover */
+  color: silver; /* Change color on hover */
 }
 
 .blog-link {
@@ -81,5 +81,6 @@ a:hover {
 .blog-link:hover {
   text-decoration: underline;
 }
+
 
 
