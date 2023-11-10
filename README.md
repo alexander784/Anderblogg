@@ -1,10 +1,10 @@
 ## Table of Content
 
-1.Description
-2.Demo
-3.Installation
-4.Usage
-5.License
+1. Description
+2. Demo
+3. Installation
+4. Usage
+5. License
 
 
 ## Description
