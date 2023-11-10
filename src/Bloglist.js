@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BlogList = ({ blogs, onDelete }) => {
+const Bloglist = ({ blogs, onDelete }) => {
     return (
       <div>
         <h2>Blog List</h2>
@@ -20,4 +20,4 @@ const BlogList = ({ blogs, onDelete }) => {
 
 
 
-export default bloglist;
+export default Bloglist;
