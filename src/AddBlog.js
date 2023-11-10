@@ -21,6 +21,24 @@ setTitle('');
 setContent('');
 };
 
+return (
+    <div>
+      <h2>Add New Blog</h2>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Title:
+          <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Content:
+          <textarea value={content} onChange={(e) => setContent(e.target.value)} />
+        </label>
+        <br />
+        <button type="submit">Add Blog</button>
+      </form>
+    </div>
+  );
 
 
 
