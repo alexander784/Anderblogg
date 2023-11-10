@@ -44,3 +44,32 @@ button {
 button:hover {
   background-color: #45a049;
 }
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+a:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
