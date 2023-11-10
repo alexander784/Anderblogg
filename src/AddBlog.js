@@ -1,27 +1,29 @@
+// Your component file, e.g., AddBlog.js
 import React, { useState } from 'react';
+import './App.css'; // Import the CSS file
 
 const AddBlog = ({ onAdd }) => {
-    const [title, setTitle] = useState('');
-    const [content, setContent] = useState('');
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-    
-        // Validate form inputs
-        if (!title || !content) {
-          alert('Please fill in all fields.');
-          return;
-        }
-}
-// Call the onAdd function with the new blog data
-onAdd({ title, content });
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-// Clear form inputs
-setTitle('');
-setContent('');
+    // Validate form inputs
+    if (!title || !content) {
+      alert('Please fill in all fields.');
+      return;
+    }
 
+    // Call the onAdd function with the new blog data
+    onAdd({ title, content });
 
-return (
+    // Clear form inputs
+    setTitle('');
+    setContent('');
+  };
+
+  return (
     <div>
       <h2>Add New Blog</h2>
       <form onSubmit={handleSubmit}>
@@ -40,9 +42,5 @@ return (
     </div>
   );
 };
-
-
-
-
 
 export default AddBlog;
