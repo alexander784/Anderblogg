@@ -1,6 +1,5 @@
-// Your component file, e.g., AddBlog.js
+// src/components/AddBlog.js
 import React, { useState } from 'react';
-import './App.css'; // Import the CSS file
 
 const AddBlog = ({ onAdd }) => {
   const [title, setTitle] = useState('');
@@ -41,6 +40,6 @@ const AddBlog = ({ onAdd }) => {
       </form>
     </div>
   );
-};
+}
 
 export default AddBlog;

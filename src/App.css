@@ -33,7 +33,7 @@ textarea {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #fa8072;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -42,7 +42,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #a52;
 }
 
 nav {
@@ -72,4 +72,14 @@ a {
 a:hover {
   color: #ffd700; /* Change color on hover */
 }
+
+.blog-link {
+  color: blue; /* Or the color you want */
+  text-decoration: none;
+}
+
+.blog-link:hover {
+  text-decoration: underline;
+}
+
 

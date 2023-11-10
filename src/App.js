@@ -5,64 +5,64 @@ import BlogDetail from './BlogDetails';
 import AddBlog from './AddBlog';
 import './App.css';
 
-  function App() {
-    const [blogs, setBlogs] = useState([]);
-  
-    useEffect(() => {
-      fetch('http://localhost:3001/blogs')
-        .then(response => response.json())
-        .then(data => setBlogs(data));
-    }, []);
-  
-    const handleDelete = (id) => {
-      fetch(`http://localhost:3001/blogs/${id}`, {
-        method: 'DELETE',
-      }).then(() => {
-        setBlogs(blogs.filter(blog => blog.id !== id));
-      });
-    };
+function App() {
+  const [blogs, setBlogs] = useState([]);
 
-    const handleAdd = (newBlog) => {
-      fetch('http://localhost:3001/blogs', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(newBlog),
+  useEffect(() => {
+    fetch('http://localhost:8000')
+      .then(response => response.json())
+      .then(data => setBlogs(data));
+  }, []);
+
+  const handleDelete = (id) => {
+    if (!id) {
+      console.error('Invalid id:', id);
+      return;
+    }
+
+    fetch(`http://localhost:8000/${id}`, {
+      method: 'DELETE',
+    })
+      .then(() => {
+        setBlogs(prevBlogs => prevBlogs.filter(blog => blog.id !== id));
       })
-        .then(response => response.json())
-        .then(data => setBlogs([...blogs, data]));
-    };
+      .catch(error => console.error('Error deleting blog:', error));
+  };
 
+  const handleAdd = (newBlog) => {
+    fetch('http://localhost:8000/blogs/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newBlog),
+    })
+      .then(response => response.json())
+      .then(data => setBlogs([...blogs, data]));
+  };
 
-    return (
-      <Router>
-        <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/add">Add Blog</Link>
-              </li>
-            </ul>
-          </nav>
-  
-          <Routes>
-            <Route path="/" element={<BlogList blogs={blogs} onDelete={handleDelete} />} />
-            <Route path="/blog/:id" element={<BlogDetail blogs={blogs} />} />
-            <Route path="/add" element={<AddBlog onAdd={handleAdd} />} />
-          </Routes>
-        </div>
-      </Router>
-    );
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/add">Add Blog</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<BlogList blogs={blogs} onDelete={handleDelete} />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/add" element={<AddBlog onAdd={handleAdd} />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
-
-
-
-
-
-
 
 export default App;
