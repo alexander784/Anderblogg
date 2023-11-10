@@ -13,8 +13,14 @@ const AddBlog = ({ onAdd }) => {
           return;
         }
 }
+// Call the onAdd function with the new blog data
+onAdd({ title, content });
 
-}
+// Clear form inputs
+setTitle('');
+setContent('');
+};
+
 
 
 
