@@ -11,7 +11,7 @@ body {
 .blog-list-container {
   text-align: center;
   padding: 20px;
-  background-color: #fa8072;
+  background-color:white;
   background-image: url('https://unsplash.com/photos/moon-near-mountain-ridge-jCL98LGaeoE'); 
 
 }
@@ -45,7 +45,7 @@ textarea {
 
 button {
   background-color: #fa8072;
-  color: white;
+  color:blue;
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
@@ -86,12 +86,61 @@ a:hover {
 
 .blog-link {
   color: blue; 
-  text-decoration: none;
 }
 
 .blog-link:hover {
   text-decoration: underline;
 }
+
+/* Add these styles to your CSS file or component */
+
+.blog-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.blog-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-content {
+  padding: 16px;
+}
+
+.blog-content h3 {
+  margin: 0;
+  color: #333;
+}
+
+.blog-image img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  background-color:#ff5733;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #ff704d;
+}
+
 
 
 

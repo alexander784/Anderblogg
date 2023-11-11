@@ -9,7 +9,7 @@ function App() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000')
+    fetch('http://localhost:5001/blogs')
       .then(response => response.json())
       .then(data => setBlogs(data));
   }, []);
@@ -20,7 +20,7 @@ function App() {
       return;
     }
 
-    fetch(`http://localhost:8000/${id}`, {
+    fetch(`http://localhost:5001/blogs${id}`, {
       method: 'DELETE',
     })
       .then(() => {
@@ -30,7 +30,7 @@ function App() {
   };
 
   const handleAdd = (newBlog) => {
-    fetch('http://localhost:8000/blogs/', {
+    fetch('http://localhost:5001/blogs', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
