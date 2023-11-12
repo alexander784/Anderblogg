@@ -52,6 +52,7 @@ function App() {
             <li>
               <Link to="/add">Add Blog</Link>
             </li>
+
           </ul>
         </nav>
 

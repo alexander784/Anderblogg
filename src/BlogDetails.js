@@ -1,10 +1,10 @@
 import React from 'react';
 
-const BlogDetails = ({ blog }) => {
+const BlogDetails = ({ blog, imageUrl }) => {
     return (
       <div>
         <h2>{blog.title}</h2>
-        <p>{blog.content}</p>
+        { blog.imageUrl }
       </div>
     );
   }
