@@ -3,21 +3,23 @@ import React, { useState } from 'react';
 const AddBlog = ({ onAdd }) => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
+  const [imageUrl, setImageUrl] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Validate form inputs
-    if (!title || !content) {
+    if (!title || !content || !imageUrl) {
       alert('Please fill in all fields.');
       return;
     }
 
-    onAdd({ title, content });
+    onAdd({ title, content, imageUrl });
 
     // Clear form inputs
     setTitle('');
     setContent('');
+    setImageUrl('');
   };
 
   return (
@@ -32,6 +34,11 @@ const AddBlog = ({ onAdd }) => {
         <label>
           Content:
           <textarea value={content} onChange={(e) => setContent(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Image URL:
+          <input type="text" value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} />
         </label>
         <br />
         <button type="submit">Add Blog</button>

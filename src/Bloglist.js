@@ -7,7 +7,7 @@ const Bloglist = ({ blogs, onDelete }) => {
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    // Update filteredBlogs when blogs prop changes (initial load or data changes)
+    // Update filteredBlogs when blogs prop changes
     setFilteredBlogs(blogs);
   }, [blogs]);
 
@@ -28,16 +28,18 @@ const Bloglist = ({ blogs, onDelete }) => {
       <div className="blog-cards-container">
         {filteredBlogs.map(blog => (
           <div key={blog.id} className="blog-card">
-            {blog.imageUrl && (
-              <div className="blog-image">
+            <div className="blog-image">
+              {blog.imageUrl && (
                 <img src={blog.imageUrl} alt={`${blog.title}`} />
-              </div>
-            )}
-            <div className="blog-title-card">
-              <div className="blog-content">
+              )}
+            </div>
+            <div className="blog-content">
+              <div className="blog-title">
                 <Link to={`/blog/${blog.id}`}>
                   <h3>{blog.title}</h3>
                 </Link>
+              </div>
+              <div className="blog-buttons">
                 <span>
                   <button className="styled-button" onClick={() => onDelete(blog.id)}>X</button>
                 </span>
@@ -49,5 +51,6 @@ const Bloglist = ({ blogs, onDelete }) => {
     </div>
   );
 };
+
 
 export default Bloglist;
