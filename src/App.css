@@ -117,27 +117,28 @@ h2{
 
 .blog-card {
   width: 48%;
-  margin-bottom: 20px;
+  height: 10%;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-sizing: border-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .blog-image img {
   max-width:100%;
-  height: auto;
+  max-height: 10%;
+  border-radius: 16px;
 }
 
 .blog-title-card{
-  border-radius: 15px;
-  color: #a52;
+  border-radius: 16px;
 }
   
 
 .blog-content {
-  padding: 26px;
-  float: left;
+  float: none;
+  position: relative;
+  padding: 1%;
+  height: 10%;
 }
 
 .blog-content h3 {
